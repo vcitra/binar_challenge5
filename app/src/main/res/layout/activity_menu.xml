@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game.MenuActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="PILIH LAWANMU"
+        android:textColor="#121211"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_lawan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_landing_page1"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/lawan_pemain"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="VS Pemain 2"
+        android:textAlignment="center"
+        android:textColor="#151514"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_lawan"
+        app:layout_constraintStart_toStartOf="@+id/img_lawan"
+        app:layout_constraintTop_toBottomOf="@+id/img_lawan" />
+
+    <ImageView
+        android:id="@+id/img_CPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_landing_page2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lawan_pemain" />
+
+    <TextView
+        android:id="@+id/lawan_CPU"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="VS Komputer"
+        android:textAlignment="center"
+        android:textColor="#151514"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_CPU" />
+</androidx.constraintlayout.widget.ConstraintLayout>
